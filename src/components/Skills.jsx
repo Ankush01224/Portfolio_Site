@@ -1,0 +1,3 @@
+import Reveal from './Reveal'
+import { skills } from '../data'
+export default function Skills() { return <section id="skills" className="section skills"><div className="container"><Reveal><div className="section-head"><p className="eyebrow accent">02 — Toolbox</p><h2>What I work <em>with.</em></h2><p>A practical toolkit I’m continuously sharpening through projects, practice, and problem solving.</p></div></Reveal><div className="skills-grid">{skills.map((skill, i) => { const Icon = skill.icon; return <Reveal className="skill-card" delay={i*.06} key={skill.title}><div className="skill-title"><Icon size={19}/><h3>{skill.title}</h3></div><div className="chips">{skill.items.map(item => <span key={item}>{item}</span>)}</div></Reveal> })}</div></div></section> }
