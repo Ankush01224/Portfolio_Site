@@ -31,3 +31,33 @@
 .project-art { display:flex;align-items:center;justify-content:center; }.project-art > span { left:20px;position:absolute;top:20px; }.project-visual { color:rgba(255,255,255,.94);height:68px;width:68px;stroke-width:1.25; }.project-links { padding:19px 0 11px; }.project-links a { font-size:12px; }
 .contact-methods a { color:var(--accent);font-size:13px; }.contact-methods small { color:var(--subtle);font-size:10px; }.contact-form { max-width:540px; }.contact-form label { font-size:12px;letter-spacing:.04em; }.contact-form input,.contact-form textarea { font-size:14px; }
 .chips span,.tags span { color:var(--muted);font-size:11px; }.footer-inner { color:var(--muted);font-size:12px;letter-spacing:.02em; }.stat span,.hackathon-skills div { color:var(--muted);font-size:12px; }.desktop-links button,.mobile-menu button { color:var(--muted);font-size:12px; }
+
+/* Usability audit refinements */
+.brand { font-size:24px; padding:10px 4px; }
+.hero-bottom { grid-template-columns:1fr 1.45fr; margin-top:58px; padding-top:26px; }
+.hero-socials { flex-wrap:wrap; margin-top:23px; }
+.section-head { align-items:flex-start; display:flex; flex-direction:column; gap:16px; }
+.section-head .eyebrow { margin-bottom:0; }
+.section-head > p:last-child { margin:0; max-width:550px; }
+.skills-grid { grid-template-columns:repeat(6,1fr); }
+.skill-card { grid-column:span 2; }
+.skill-card:last-child { grid-column:3 / span 2; }
+.skill-title { gap:7px; }
+.chips { column-gap:7px; row-gap:11px; }
+.contact-methods { gap:14px 28px; }
+.contact-methods a { align-items:center; }
+.footer-inner { justify-content:center; }
+
+@media (max-width:760px) {
+  .hero-bottom { grid-template-columns:1fr; margin-top:30px; padding-top:22px; }
+  .hero-socials { margin-top:20px; }
+  .section-head { display:flex; }
+  .section-head h2 { margin-bottom:0; }
+  .skills-grid { grid-template-columns:1fr; }
+  .skill-card,.skill-card:last-child { grid-column:auto; }
+}
+
+@media (min-width:761px) and (max-width:1020px) {
+  .skills-grid { grid-template-columns:repeat(2,1fr); }
+  .skill-card,.skill-card:last-child { grid-column:auto; }
+}
