@@ -50,6 +50,7 @@
 
 /* Keep the portrait focused on the face and upper body in its responsive frame. */
 .portrait-wrap img { display:block; object-position:50% 20%; }
+.portrait-ring { border-radius:52% 48% 46% 54% / 42% 46% 54% 58%; inset:-8px; transform:rotate(-2deg); }
 
 @media (max-width:760px) {
   .hero-bottom { grid-template-columns:1fr; margin-top:30px; padding-top:22px; }
