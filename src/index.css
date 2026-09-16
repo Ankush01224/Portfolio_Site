@@ -48,6 +48,9 @@
 .contact-methods a { align-items:center; }
 .footer-inner { justify-content:center; }
 
+/* Keep the portrait focused on the face and upper body in its responsive frame. */
+.portrait-wrap img { display:block; object-position:50% 20%; }
+
 @media (max-width:760px) {
   .hero-bottom { grid-template-columns:1fr; margin-top:30px; padding-top:22px; }
   .hero-socials { margin-top:20px; }
